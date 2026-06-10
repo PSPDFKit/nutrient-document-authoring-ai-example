@@ -1,0 +1,25 @@
+CONSULTING SERVICES AGREEMENT
+
+This sample Consulting Services Agreement is made on April 30, 2026 between Example Client LLC, located at 100 Market Street, San Francisco, CA, and Example Advisory LLC.
+
+Client: Example Client LLC
+
+Consultant: Example Advisory LLC
+
+Effective Date: April 30, 2026
+
+Term: six months
+
+Fee: $12,000
+
+Dear Jane Smith,
+
+Example Advisory LLC will provide product strategy and implementation consulting services for Example Client LLC. The work will begin on April 30, 2026 and continue for six months unless the parties agree otherwise in writing.
+
+Example Client LLC will pay Example Advisory LLC a fixed fee of $12,000. Contract notices may be sent to contracts@example-advisory.example.
+
+Sincerely,
+
+Jordan Lee
+
+Director of Operations

@@ -1,0 +1,1169 @@
+{
+  "type": "https://pspdfkit.com/document-authoring/persistence/container",
+  "version": 9,
+  "container": {
+    "document": {
+      "stylesTable": {
+        "Normal": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 0,
+          "spaceAfter": 8,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#000000",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 11
+        },
+        "Title": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1,
+          "spaceBefore": 0,
+          "spaceAfter": 0,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#000000",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 28
+        },
+        "Subtitle": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 0,
+          "spaceAfter": 16,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#666666",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 15
+        },
+        "Heading 1": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 20,
+          "spaceAfter": 6,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#000000",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 20
+        },
+        "Heading 2": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 18,
+          "spaceAfter": 6,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#000000",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 16
+        },
+        "Heading 3": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 16,
+          "spaceAfter": 4,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#434343",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 14
+        },
+        "Heading 4": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 14,
+          "spaceAfter": 4,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#666666",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 12
+        },
+        "Heading 5": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 12,
+          "spaceAfter": 4,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#666666",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 11
+        },
+        "Heading 6": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 12,
+          "spaceAfter": 4,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": true,
+          "color": "#666666",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 11
+        }
+      },
+      "body": {
+        "sections": [
+          {
+            "pageSetup": {
+              "margins": {
+                "l": 72,
+                "r": 72,
+                "t": 64,
+                "b": 72
+              },
+              "size": {
+                "x": 595,
+                "y": 842
+              }
+            },
+            "footnotePr": {
+              "separator": [],
+              "numberFormat": "decimal",
+              "restartRule": "none",
+              "startAt": 1
+            },
+            "endnotePr": {
+              "separator": [],
+              "numberFormat": "upperRoman",
+              "restartRule": "none",
+              "startAt": 1
+            },
+            "elements": [
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 23,
+                      "color": "#111827"
+                    },
+                    "text": "NIST CSF 2.0 Small Business Overview"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "color": "#374151"
+                    },
+                    "text": "Status: Ready for translation | Owner: Operations | Audience: small business advisors | Date: May 1, 2026"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Purpose"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "This brief explains how a small organization can start using NIST CSF 2.0 concepts. It will be translated into Spanish for advisors who support small businesses. Keep framework names, function labels, and technical terms unchanged."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Context"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "Many small organizations have modest cybersecurity plans and need a clear, localized guide that reflects practical risk management steps, communication needs, and recovery expectations."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Terms to keep unchanged"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "The following terms, names, and labels should remain exactly as written in the translation."
+                  }
+                ]
+              },
+              {
+                "type": "t",
+                "rows": [
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "rPr": {
+                                  "bold": true,
+                                  "color": "#1f2937"
+                                },
+                                "text": "Term"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#eef6f5"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "rPr": {
+                                  "bold": true,
+                                  "color": "#1f2937"
+                                },
+                                "text": "Type"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#eef6f5"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "rPr": {
+                                  "bold": true,
+                                  "color": "#1f2937"
+                                },
+                                "text": "Notes"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#eef6f5"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "NIST"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Proper noun"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Agency name"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "CSF 2.0"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Framework name"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Do not translate"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Govern"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "CSF function"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Keep the function label unchanged"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Identify"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "CSF function"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Keep the function label unchanged"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Protect"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "CSF function"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Keep the function label unchanged"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Respond"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "CSF function"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Keep the function label unchanged"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Recover"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "CSF function"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Keep the function label unchanged"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "SMB"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Abbreviation"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Keep uppercase"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Localization notes"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "Use natural, professional Spanish for a small-business audience."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "Do not translate NIST, CSF 2.0, Govern, Identify, Protect, Respond, Recover, or SMB."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "Keep date and time formats consistent with regional expectations."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "Ensure framework labels remain accurate after translation."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Quick-start overview"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "1. Identify the systems, accounts, and data that support daily operations."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "2. Decide who owns cybersecurity decisions and incident escalation."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "3. Use safeguards such as MFA, backups, updates, and role-based access."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "4. Define how staff should report suspected incidents."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "5. Document how the organization will restore affected systems and operations."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Next steps"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "After translation, share the draft with operations and advisory staff for review by May 6, 2026. Once approved, publish it with the small-business planning materials."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "Questions? Contact the operations owner or the advisor assigned to the planning session."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "resources": {}
+}

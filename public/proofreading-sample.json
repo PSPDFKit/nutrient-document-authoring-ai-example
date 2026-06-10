@@ -1,0 +1,673 @@
+{
+  "type": "https://pspdfkit.com/document-authoring/persistence/container",
+  "version": 9,
+  "container": {
+    "document": {
+      "stylesTable": {
+        "Normal": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 0,
+          "spaceAfter": 8,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#000000",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 11
+        },
+        "Title": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1,
+          "spaceBefore": 0,
+          "spaceAfter": 0,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#000000",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 28
+        },
+        "Subtitle": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 0,
+          "spaceAfter": 16,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#666666",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 15
+        },
+        "Heading 1": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 20,
+          "spaceAfter": 6,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#000000",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 20
+        },
+        "Heading 2": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 18,
+          "spaceAfter": 6,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#000000",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 16
+        },
+        "Heading 3": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 16,
+          "spaceAfter": 4,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#434343",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 14
+        },
+        "Heading 4": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 14,
+          "spaceAfter": 4,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#666666",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 12
+        },
+        "Heading 5": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 12,
+          "spaceAfter": 4,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#666666",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 11
+        },
+        "Heading 6": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 12,
+          "spaceAfter": 4,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": true,
+          "color": "#666666",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 11
+        }
+      },
+      "body": {
+        "sections": [
+          {
+            "pageSetup": {
+              "margins": {
+                "l": 72,
+                "r": 72,
+                "t": 64,
+                "b": 72
+              },
+              "size": {
+                "x": 595,
+                "y": 842
+              }
+            },
+            "footnotePr": {
+              "separator": [],
+              "numberFormat": "decimal",
+              "restartRule": "none",
+              "startAt": 1
+            },
+            "endnotePr": {
+              "separator": [],
+              "numberFormat": "upperRoman",
+              "restartRule": "none",
+              "startAt": 1
+            },
+            "elements": [
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 24,
+                      "color": "#111827"
+                    },
+                    "text": "Cybersecurity Quick-Start Brief"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "color": "#374151"
+                    },
+                    "text": "Status: In review | Owner: Operations | Date: May 1, 2026"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Executive summary"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "This brief provides a high-level overview of a small-business cybersecurity quick-start plan. it outlines the key practices, supporting materials, and timing for a succesful first review."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "The goal are to ensure the organization has practical steps that help staff manage cyber risk and recover from incidents."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Review overview"
+                  }
+                ]
+              },
+              {
+                "type": "t",
+                "rows": [
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "rPr": {
+                                  "bold": true,
+                                  "color": "#1f2937"
+                                },
+                                "text": "Area"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#eef6f5"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "rPr": {
+                                  "bold": true,
+                                  "color": "#1f2937"
+                                },
+                                "text": "Review status"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#eef6f5"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Governance and roles"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "In progress - please verify decision owners and escalation contacts."
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Asset inventory"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "complete - core systems and accounts are listed."
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Access controls"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "In progress - confirm MFA coverage and account review timing."
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Incident response"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Not started - review response steps and recovery contacts."
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#a8b2bd",
+                              "r": "#a8b2bd",
+                              "t": "#a8b2bd",
+                              "b": "#a8b2bd"
+                            }
+                          },
+                          "fill": "#ffffff"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Key practices"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "1. Understand current risk: Identify the systems, accounts, and data that support daily operations."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "2. Protect important assets: Use safeguards such as MFA, backups, software updates, and role-based access."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "3. Prepare to respond: Define who should act when an incident is detected and how the business will recover."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Supporting materials"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "Asset inventory worksheet (DOCX), incident contact list (PDF), backup schedule (XLSX), and staff awareness checklist (PDF)."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Next steps"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "Please review the materials and share feedback by Tuesday, May 5. Once comments are resolved, we will finalise the plan and brief the operations team."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "If you have any question or need additional information, reach out to the operations owner before the review meeting."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "resources": {}
+}

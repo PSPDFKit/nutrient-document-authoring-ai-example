@@ -1,0 +1,1238 @@
+{
+  "type": "https://pspdfkit.com/document-authoring/persistence/container",
+  "version": 9,
+  "container": {
+    "document": {
+      "stylesTable": {
+        "Normal": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 0,
+          "spaceAfter": 8,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#000000",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 11
+        },
+        "Title": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1,
+          "spaceBefore": 0,
+          "spaceAfter": 0,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#000000",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 28
+        },
+        "Subtitle": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 0,
+          "spaceAfter": 16,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#666666",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 15
+        },
+        "Heading 1": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 20,
+          "spaceAfter": 6,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#000000",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 20
+        },
+        "Heading 2": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 18,
+          "spaceAfter": 6,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#000000",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 16
+        },
+        "Heading 3": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 16,
+          "spaceAfter": 4,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#434343",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 14
+        },
+        "Heading 4": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 14,
+          "spaceAfter": 4,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#666666",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 12
+        },
+        "Heading 5": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 12,
+          "spaceAfter": 4,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": false,
+          "color": "#666666",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 11
+        },
+        "Heading 6": {
+          "alignment": "left",
+          "indentation": {
+            "left": 0,
+            "right": 0,
+            "firstLineShift": 0
+          },
+          "tabStops": [],
+          "lineSpacingFactor": 1.08,
+          "spaceBefore": 12,
+          "spaceAfter": 4,
+          "contextualSpacing": false,
+          "bold": false,
+          "italic": true,
+          "color": "#666666",
+          "strikeout": false,
+          "underline": false,
+          "highlight": "none",
+          "face": "Carlito",
+          "pointSize": 11
+        }
+      },
+      "body": {
+        "sections": [
+          {
+            "pageSetup": {
+              "margins": {
+                "l": 72,
+                "r": 72,
+                "t": 72,
+                "b": 72
+              },
+              "size": {
+                "x": 595,
+                "y": 842
+              }
+            },
+            "footnotePr": {
+              "separator": [],
+              "numberFormat": "decimal",
+              "restartRule": "none",
+              "startAt": 1
+            },
+            "endnotePr": {
+              "separator": [],
+              "numberFormat": "upperRoman",
+              "restartRule": "none",
+              "startAt": 1
+            },
+            "headersAndFooters": {
+              "useFirst": false,
+              "useEvenOdd": false,
+              "headers": {
+                "default": {
+                  "elements": [
+                    {
+                      "type": "p",
+                      "pPr": {
+                        "styleId": "Normal",
+                        "alignment": "left",
+                        "lineSpacingFactor": 1,
+                        "spaceBefore": 0,
+                        "spaceAfter": 0,
+                        "contextualSpacing": false
+                      },
+                      "elements": [
+                        {
+                          "type": "r",
+                          "rPr": {
+                            "bold": true,
+                            "pointSize": 10,
+                            "color": "#0f766e"
+                          },
+                          "text": "NIST CSF 2.0 Pilot Header"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "first": {
+                  "elements": []
+                }
+              },
+              "footers": {
+                "default": {
+                  "elements": [
+                    {
+                      "type": "p",
+                      "pPr": {
+                        "styleId": "Normal",
+                        "alignment": "right",
+                        "lineSpacingFactor": 1,
+                        "spaceBefore": 0,
+                        "spaceAfter": 0,
+                        "contextualSpacing": false
+                      },
+                      "elements": [
+                        {
+                          "type": "r",
+                          "rPr": {
+                            "bold": false,
+                            "pointSize": 10,
+                            "color": "#4b5563"
+                          },
+                          "text": "Source-adapted demo footer - update with AI"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "first": {
+                  "elements": []
+                }
+              }
+            },
+            "elements": [
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 24,
+                      "color": "#111827"
+                    },
+                    "text": "Small Business Cybersecurity Review Brief"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "Status: In review | Audience: small business operators and advisors"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Executive summary"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "This sample brief is adapted from NIST guidance for small organizations starting a cybersecurity risk management program with the Cybersecurity Framework 2.0."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "Desired outcome: turn working notes into a concise action brief that a small business owner can review and update."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Planning context"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "A small organization has modest cybersecurity practices in place and needs a practical way to understand current risks, choose next steps, and communicate progress without creating a large compliance program."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Review steps"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "Understand current business systems and data."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "Assess gaps between current practices and desired outcomes."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "Prioritize actions that reduce the most important risks first."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "Communicate decisions, responsibilities, and progress to staff."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Planning worksheet"
+                  }
+                ]
+              },
+              {
+                "type": "t",
+                "rows": [
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "rPr": {
+                                  "bold": true,
+                                  "color": "#1f2937"
+                                },
+                                "text": "CSF function"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "rPr": {
+                                  "bold": true,
+                                  "color": "#1f2937"
+                                },
+                                "text": "Focus area"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "rPr": {
+                                  "bold": true,
+                                  "color": "#1f2937"
+                                },
+                                "text": "Suggested next action"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "rPr": {
+                                  "bold": true,
+                                  "color": "#1f2937"
+                                },
+                                "text": "Status"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Govern"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Policy and roles"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Confirm who owns cybersecurity decisions"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Drafted"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Identify"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Assets and risks"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "List key systems, accounts, and data"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Ready"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Protect"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Access safeguards"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Review backups and account protections"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Pending"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "tPr": {
+                  "indentation": 0
+                }
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "The worksheet should stay short enough for an owner or advisor to review in one meeting."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Progress measures"
+                  }
+                ]
+              },
+              {
+                "type": "t",
+                "rows": [
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "rPr": {
+                                  "bold": true,
+                                  "color": "#1f2937"
+                                },
+                                "text": "Measure"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "rPr": {
+                                  "bold": true,
+                                  "color": "#1f2937"
+                                },
+                                "text": "Desired outcome"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "rPr": {
+                                  "bold": true,
+                                  "color": "#1f2937"
+                                },
+                                "text": "Current read"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Risk ownership"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Each major system has a named owner"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Strong"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Priority actions"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Top risks have practical next steps"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Needs review"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Recovery readiness"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "Backups and recovery contacts are documented"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "elements": [
+                          {
+                            "type": "p",
+                            "elements": [
+                              {
+                                "type": "r",
+                                "text": "On track"
+                              }
+                            ]
+                          }
+                        ],
+                        "tcPr": {
+                          "border": {
+                            "colors": {
+                              "l": "#000000",
+                              "r": "#000000",
+                              "t": "#000000",
+                              "b": "#000000"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "tPr": {
+                  "indentation": 0
+                }
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "Each measure should be easy for the assistant to find, summarize, and update during review."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Open issue"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "Risk level: medium. The organization still needs to confirm whether backup restoration has been tested recently."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "rPr": {
+                      "bold": true,
+                      "pointSize": 15,
+                      "color": "#0f766e"
+                    },
+                    "text": "Review notes"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "elements": [
+                  {
+                    "type": "r",
+                    "text": "Use Review mode when asking the assistant for substantial rewrites so proposed changes remain inspectable before acceptance."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "resources": {}
+}
