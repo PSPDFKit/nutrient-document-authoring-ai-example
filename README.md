@@ -18,7 +18,7 @@ npm run dev
 
 The example installs the stable `@nutrient-sdk/document-authoring` package from npm and uses the SDK's default CDN-hosted assets.
 
-Set `OPENAI_API_KEY` in `.env.local` before using the assistant. Set `NEXT_PUBLIC_DOCUMENT_AUTHORING_LICENSE_KEY` when running with a Document Authoring SDK license. The example defaults to `gpt-5.4-mini`.
+Set `OPENAI_API_KEY` in `.env.local` before using the assistant. Optionally set `NEXT_PUBLIC_DOCUMENT_AUTHORING_LICENSE_KEY` to run Document Authoring with your SDK license instead of evaluation behavior. If you're interested in a Document Authoring license, [contact sales](https://www.nutrient.io/contact-sales/). The example defaults to `gpt-5.4-mini`.
 
 ## Sample documents
 
