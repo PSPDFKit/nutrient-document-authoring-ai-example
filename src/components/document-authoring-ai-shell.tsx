@@ -3,6 +3,7 @@
 import { useChat } from '@ai-sdk/react';
 import { DefaultChatTransport, lastAssistantMessageIsCompleteWithToolCalls } from 'ai';
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
+import Markdown from 'react-markdown';
 import {
 	getAiToolDefinitions,
 	isAiWriteToolName,
@@ -33,6 +34,7 @@ type UseCaseUi = {
 	id: AiUseCaseId;
 	label: string;
 	documentUrl: string;
+	docxDocument?: boolean;
 	plaintextDocument?: boolean;
 	author: string;
 	editorMode: 'edit' | 'review';
@@ -48,11 +50,56 @@ type UseCaseUi = {
 	completion: { title: string; dismissLabel: string };
 };
 
+type AssistantPromptShortcut = {
+	label: string;
+	prompt: string;
+	forceReviewMode?: boolean;
+};
+
+const ASSISTANT_QUERY_PROMPTS: readonly AssistantPromptShortcut[] = [
+	{
+		label: 'Find blanks to finish',
+		prompt:
+			'List every bracketed blank, checkbox, and optional Cover Page item that must be completed before this Common Paper Mutual NDA is signed. Explain what decision each one needs.',
+	},
+	{
+		label: 'Review term choices',
+		prompt:
+			'Review the selected MNDA Term and Term of Confidentiality. Explain whether the one-year defaults are enough for product plans, pricing, security materials, and trade secrets.',
+	},
+	{
+		label: 'Check who can see info',
+		prompt:
+			'Explain who may receive Confidential Information under the Standard Terms. Flag whether affiliates, outside counsel, investors, auditors, or prospective acquirers are clearly covered.',
+	},
+];
+
+const ASSISTANT_MODIFICATION_PROMPTS: readonly AssistantPromptShortcut[] = [
+	{
+		label: 'Fill effective date',
+		prompt: 'Set the Cover Page effective date to June 25, 2026.',
+		forceReviewMode: true,
+	},
+	{
+		label: 'Set 3-year protection',
+		prompt:
+			'Update the Term of Confidentiality to three years from the date of last disclosure, while keeping the trade secret protection language.',
+		forceReviewMode: true,
+	},
+	{
+		label: 'Add affiliate access',
+		prompt:
+			'Add a Cover Page change allowing disclosure to controlled affiliates that need to know for the Purpose, if they are bound by confidentiality obligations at least as protective as this MNDA.',
+		forceReviewMode: true,
+	},
+];
+
 const USE_CASES: readonly UseCaseUi[] = [
 	{
 		id: 'ai-editor',
-		label: 'AI Editor',
-		documentUrl: '/sample.json',
+		label: 'Legal Assistant',
+		documentUrl: '/sample.docx',
+		docxDocument: true,
 		author: 'AI Assistant',
 		editorMode: 'edit',
 		completion: { title: 'Selection updated', dismissLabel: 'Dismiss selection edit confirmation' },
@@ -66,7 +113,7 @@ const USE_CASES: readonly UseCaseUi[] = [
 		hideToolbar: true,
 		panel: {
 			title: 'Proofreading Assistant',
-			description: 'Review the document or selected content and suggest improvements as tracked changes.',
+			description: 'Review the document or selected content and apply suggested improvements.',
 			selectionAction: 'Review Selection',
 			documentAction: 'Review Document',
 			busy: 'Reviewing...',
@@ -115,6 +162,9 @@ const USE_CASES: readonly UseCaseUi[] = [
 type EditorInstance = { system: DocAuthSystem; editor: DocAuthEditor; toolkit: AiToolkit };
 
 const loadDocumentForUseCase = async (system: DocAuthSystem, useCase: UseCaseUi) => {
+	if (useCase.docxDocument) {
+		return system.import(fetch(useCase.documentUrl), { fileName: useCase.documentUrl.split('/').at(-1) ?? 'document.docx' });
+	}
 	if (useCase.plaintextDocument) {
 		const response = await fetch(useCase.documentUrl);
 		if (!response.ok) {
@@ -249,6 +299,25 @@ const formatJson = (value: unknown) => {
 		return 'Unable to display value.';
 	}
 };
+
+const AssistantMarkdown = ({ text }: { text: string }) => (
+	<div className="bubble-markdown">
+		<Markdown
+			skipHtml
+			components={{
+				a({ href, children }) {
+					return (
+						<a href={href} target="_blank" rel="noreferrer">
+							{children}
+						</a>
+					);
+				},
+			}}
+		>
+			{text}
+		</Markdown>
+	</div>
+);
 
 /**
  * Automatic follow-up sends (after tool results) do not carry the submit-time
@@ -486,15 +555,19 @@ export function DocumentAuthoringAiShell({ chrome = true }: { chrome?: boolean }
 				output = parsedOutput;
 			}
 
+			const writeMode =
+				useCaseId === 'template-fields'
+					? 'apply'
+					: editorMode === 'review'
+						? 'track_changes'
+						: 'apply';
 			await instance.toolkit.applyWorkflowOutput(workflow, output, {
 				scope: workflowInput.scope,
-				writeMode:
-					useCaseId === 'template-fields' || workflowInput.scope === 'document'
-						? 'apply'
-						: editorMode === 'review'
-							? 'track_changes'
-							: 'apply',
+				writeMode,
 			});
+			if (workflowInput.scope === 'document') {
+				applyUseCaseEditorSettings(instance.editor, useCase);
+			}
 			setCompletionVisible(true);
 		} catch (runError) {
 			setWorkflowError(getErrorMessage(runError));
@@ -512,11 +585,17 @@ export function DocumentAuthoringAiShell({ chrome = true }: { chrome?: boolean }
 		void runWorkflow({ task, scope: useCaseId === 'template-fields' ? 'document' : 'auto' });
 	};
 
-	const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-		event.preventDefault();
-		const prompt = draftInput.trim();
-		if (!prompt || isSubmitting || !editorReady) {
+	const submitAssistantPrompt = (rawPrompt: string, options: { forceReviewMode?: boolean } = {}) => {
+		const prompt = rawPrompt.trim();
+		const instance = instanceRef.current;
+		if (!prompt || isSubmitting || !editorReady || !instance) {
 			return;
+		}
+		clearError();
+		setCompletionVisible(false);
+		setWorkflowError(null);
+		if (options.forceReviewMode) {
+			instance.editor.setEditorMode('review');
 		}
 		setDraftInput('');
 		if (selectionText) {
@@ -525,6 +604,11 @@ export function DocumentAuthoringAiShell({ chrome = true }: { chrome?: boolean }
 		}
 		reviewCommentsRef.current = reviewComments;
 		sendMessage({ text: prompt, metadata: { reviewComments } }, { body: { reviewComments } });
+	};
+
+	const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+		event.preventDefault();
+		submitAssistantPrompt(draftInput);
 	};
 
 	const handleResizePointerDown = (event: React.PointerEvent) => {
@@ -592,16 +676,50 @@ export function DocumentAuthoringAiShell({ chrome = true }: { chrome?: boolean }
 			<main ref={layoutRef} className="document-authoring-ai-layout" style={{ gridTemplateColumns: `${panelWidth}px 0 1fr` }}>
 				{useCaseId === 'ai-editor' ? (
 					<section
-						aria-label="AI Assistant"
+						aria-label="Legal Assistant"
 						className="assistant-panel"
 						onWheelCapture={(event) => event.stopPropagation()}
 						onTouchMoveCapture={(event) => event.stopPropagation()}
 					>
 						<header className="panel-heading">
-							<h2>Assistant</h2>
-							<p>Use Edit for direct changes, or switch to Review to create tracked changes.</p>
+							<h2>Legal Assistant</h2>
+							<p>Review this Mutual NDA, flag open issues, and prepare focused edits for counsel.</p>
 						</header>
 						<div ref={feedRef} className="bubble-feed" data-testid="assistant-bubble-feed">
+							{messages.length === 0 ? (
+								<section className="assistant-prompt-shortcuts" aria-label="Sample legal prompts">
+									<div className="assistant-prompt-group">
+										<h3>Ask About The Draft</h3>
+										<div className="assistant-prompt-buttons">
+											{ASSISTANT_QUERY_PROMPTS.map((shortcut) => (
+												<button
+													key={shortcut.label}
+													type="button"
+													disabled={controlsDisabled}
+													onClick={() => submitAssistantPrompt(shortcut.prompt)}
+												>
+													{shortcut.label}
+												</button>
+											))}
+										</div>
+									</div>
+									<div className="assistant-prompt-group">
+										<h3>Revise The Draft</h3>
+										<div className="assistant-prompt-buttons">
+											{ASSISTANT_MODIFICATION_PROMPTS.map((shortcut) => (
+												<button
+													key={shortcut.label}
+													type="button"
+													disabled={controlsDisabled}
+													onClick={() => submitAssistantPrompt(shortcut.prompt, { forceReviewMode: shortcut.forceReviewMode })}
+												>
+													{shortcut.label}
+												</button>
+											))}
+										</div>
+									</div>
+								</section>
+							) : null}
 							{messages.map((message) =>
 								message.parts.map((part, partIndex) => {
 									const key = `${message.id}-${partIndex}`;
@@ -609,7 +727,7 @@ export function DocumentAuthoringAiShell({ chrome = true }: { chrome?: boolean }
 										return (
 											<article key={key} className={`bubble bubble-${message.role}`}>
 												<strong>{message.role === 'user' ? 'You' : 'Assistant'}</strong>
-												<p>{part.text}</p>
+												{message.role === 'assistant' ? <AssistantMarkdown text={part.text} /> : <p>{part.text}</p>}
 											</article>
 										);
 									}
@@ -653,7 +771,7 @@ export function DocumentAuthoringAiShell({ chrome = true }: { chrome?: boolean }
 										disabled={controlsDisabled}
 										onChange={(event) => setReviewComments(event.target.checked ? 'create' : 'disabled')}
 									/>
-									<span>Add review comments</span>
+									<span>Add notes explaining AI edits</span>
 								</label>
 							)}
 							<label htmlFor="assistant-input" className="sr-only">
@@ -672,7 +790,7 @@ export function DocumentAuthoringAiShell({ chrome = true }: { chrome?: boolean }
 								}}
 								rows={3}
 								disabled={controlsDisabled}
-								placeholder="What do you want to do in the document?"
+								placeholder="What do you want to do to the contract?"
 							/>
 							<div className="assistant-form-actions">
 								<button type="submit" disabled={submitDisabled}>

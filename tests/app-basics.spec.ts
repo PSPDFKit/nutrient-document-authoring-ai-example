@@ -4,7 +4,7 @@ const waitForReady = async (page: Page) => {
 	// The Document Authoring SDK populates the host element once the editor has
 	// booted; the use-case tabs stay disabled until the document is loaded.
 	await expect(page.locator('[data-testid="document-editor-host"] > *').first()).toBeAttached({ timeout: 60_000 });
-	await expect(page.getByRole('tab', { name: 'AI Editor' })).toBeEnabled({ timeout: 60_000 });
+	await expect(page.getByRole('tab', { name: 'Legal Assistant' })).toBeEnabled({ timeout: 60_000 });
 };
 
 const openTab = async (page: Page, name: string) => {
@@ -14,11 +14,17 @@ const openTab = async (page: Page, name: string) => {
 	await expect(tab).toBeEnabled({ timeout: 60_000 });
 };
 
+const uiMessageStreamBody = (chunks: readonly Record<string, unknown>[]) =>
+	`${chunks.map((chunk) => `data: ${JSON.stringify(chunk)}`).join('\n\n')}\n\ndata: [DONE]\n\n`;
+
 test('shows the right side panel per use case', async ({ page }) => {
 	await page.goto('/');
 	await waitForReady(page);
 
-	await expect(page.getByRole('region', { name: 'AI Assistant' }).getByRole('heading', { name: 'Assistant' })).toBeVisible();
+	const assistantPanel = page.getByRole('region', { name: 'Legal Assistant' });
+	await expect(assistantPanel.getByRole('heading', { name: 'Legal Assistant' })).toBeVisible();
+	await expect(assistantPanel.getByRole('button', { name: 'Find blanks to finish' })).toBeEnabled();
+	await expect(assistantPanel.getByRole('button', { name: 'Fill effective date' })).toBeEnabled();
 
 	await openTab(page, 'Proofreading');
 	await expect(page.getByRole('button', { name: 'Review Document' })).toBeEnabled({ timeout: 60_000 });
@@ -46,6 +52,54 @@ test('assistant prompt posts a chat request and renders the conversation', async
 
 	const userBubble = page.locator('.bubble-user');
 	await expect(userBubble.locator('p')).toHaveText('Make the title bold.');
+	await expect(page.locator('.bubble-assistant')).toHaveCount(1, { timeout: 15_000 });
+	expect(requestBody?.useCase).toBe('ai-editor');
+	expect(requestBody?.reviewComments).toBe('disabled');
+	expect(Array.isArray(requestBody?.messages)).toBe(true);
+});
+
+test('assistant responses render Markdown', async ({ page }) => {
+	await page.route('**/api/chat', async (route) => {
+		await route.fulfill({
+			status: 200,
+			headers: {
+				'content-type': 'text/event-stream',
+				'x-vercel-ai-ui-message-stream': 'v1',
+			},
+			body: uiMessageStreamBody([
+				{ type: 'start', messageId: 'mock-assistant-message' },
+				{ type: 'text-start', id: 'answer' },
+				{ type: 'text-delta', id: 'answer', delta: 'Use **bold** text:\n\n- First item\n- [Reference](https://example.com)' },
+				{ type: 'text-end', id: 'answer' },
+				{ type: 'finish', finishReason: 'stop' },
+			]),
+		});
+	});
+	await page.goto('/');
+	await waitForReady(page);
+
+	await page.getByRole('textbox', { name: 'Ask assistant' }).fill('Format the answer.');
+	await page.getByRole('button', { name: 'Submit' }).click();
+
+	const assistantMarkdown = page.locator('.bubble-assistant .bubble-markdown');
+	await expect(assistantMarkdown.locator('strong')).toHaveText('bold', { timeout: 15_000 });
+	await expect(assistantMarkdown.locator('li')).toHaveText(['First item', 'Reference']);
+	await expect(assistantMarkdown.getByRole('link', { name: 'Reference' })).toHaveAttribute('target', '_blank');
+});
+
+test('tracked modification shortcut posts a chat request', async ({ page }) => {
+	let requestBody: Record<string, unknown> | undefined;
+	await page.route('**/api/chat', async (route) => {
+		requestBody = route.request().postDataJSON() as Record<string, unknown>;
+		await route.fulfill({ status: 500, contentType: 'application/json', body: JSON.stringify({ error: 'Mock chat failure.' }) });
+	});
+	await page.goto('/');
+	await waitForReady(page);
+
+	await page.getByRole('button', { name: 'Fill effective date' }).click();
+
+	const userBubble = page.locator('.bubble-user');
+	await expect(userBubble.locator('p')).toHaveText('Set the Cover Page effective date to June 25, 2026.');
 	await expect(page.locator('.bubble-assistant')).toHaveCount(1, { timeout: 15_000 });
 	expect(requestBody?.useCase).toBe('ai-editor');
 	expect(requestBody?.reviewComments).toBe('disabled');

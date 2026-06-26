@@ -7,7 +7,6 @@
 		"dev": "next dev --webpack",
 		"build": "next build --webpack",
 		"start": "next start",
-		"vercel:install": "bash scripts/vercel-install.sh",
 		"test": "playwright test --config=playwright.config.ts",
 		"typecheck": "tsc --noEmit",
 		"lint": "eslint .",
@@ -16,12 +15,13 @@
 	"dependencies": {
 		"@ai-sdk/openai": "^3.0.52",
 		"@ai-sdk/react": "^3.0.161",
-		"@nutrient-sdk/document-authoring": "1.15.0",
-		"@nutrient-sdk/document-authoring-ai": "1.0.0",
+		"@nutrient-sdk/document-authoring": "1.16.0",
+		"@nutrient-sdk/document-authoring-ai": "1.0.1",
 		"ai": "^6.0.159",
 		"next": "16.2.6",
 		"react": "19.2.5",
 		"react-dom": "19.2.5",
+		"react-markdown": "^10.1.0",
 		"zod": "^4.3.6"
 	},
 	"devDependencies": {
