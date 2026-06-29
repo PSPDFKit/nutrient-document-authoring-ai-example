@@ -1,0 +1,39 @@
+{
+	"name": "document-authoring-ai-example",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "next dev --webpack",
+		"build": "next build --webpack",
+		"start": "next start",
+		"test": "playwright test --config=playwright.config.ts",
+		"typecheck": "tsc --noEmit",
+		"lint": "eslint .",
+		"check": "npm run typecheck && npm run lint"
+	},
+	"dependencies": {
+		"@ai-sdk/openai": "^3.0.52",
+		"@ai-sdk/react": "^3.0.161",
+		"@nutrient-sdk/document-authoring": "1.16.0",
+		"@nutrient-sdk/document-authoring-ai": "1.0.1",
+		"ai": "^6.0.159",
+		"next": "16.2.6",
+		"react": "19.2.5",
+		"react-dom": "19.2.5",
+		"react-markdown": "^10.1.0",
+		"zod": "^4.3.6"
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.47.2",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"eslint": "^9",
+		"eslint-config-next": "16.2.6",
+		"typescript": "^5"
+	},
+	"overrides": {
+		"postcss": "8.5.10"
+	}
+}
